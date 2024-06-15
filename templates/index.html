@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sci-Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Sci-Bot</a>
+            <ul class="navlist">
+                <li><a href="#" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#" title="Help"><i class="fa-solid fa-question"></i></a></li>
+                <li><a href="#" title="About"><i class="fa-solid fa-globe"></i></a></li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>SCIBOT</h1>
+            <p>The project “SciBot” mainly focus on to develop a chat bot that serves as a resource for the Science Students as well as other students seeking assistance with Science Formula and Numerical Problem solving.
+                 SciBot based on the Natural Language Processing and Machine Learning Techniques to provide an accurate answer, 
+                 explanations, and guidance in various scientific disciplines.
+                   The project aims to create an accessible and dependable tool for science learners, educators, and enthusiasts.
+            </p>
+            <a href="#">Sci-Bot</a>
+            <a href="{{ url_for('chatbot_page') }}" class="ctaa"><i class="ri-play-fill"></i>Let's Started</a>
+        </div>
+    </section>
+    <div class="icon">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-telegram-fill"></i></a>
+        <a href="#"><i class="ri-phone-fill"></i></a>
+    </div>
+    <div class="scroll-down"><i class="ri-arrow-down-s-fill"></i></div>
+    <div class="msg">Working of Sci-Bot....</div>
+    <div class="message-box info-box1">
+        <p>Define Law of Motion</p>
+    </div>
+    <div class="message-box info-box2">
+        <p>what is Area of a Square.</p>
+    </div>
+    <div class="message-box info-box3">
+        <p>Kilo-gram into Gram.</p>
+    </div>
+    <div class="message-box info-box4">
+        <p>Calculate the Force</p>
+    </div>
+</body>
+</html>

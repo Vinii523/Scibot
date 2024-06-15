@@ -1,0 +1,271 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi", "Hey"],
+            "responses": ["Hello! How can I help you?", "Hi there! How can I assist you today?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "Bye", "See you later"],
+            "responses": ["Goodbye! Have a great day.", "See you later!"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["What's your name?", "Who are you?"],
+            "responses": ["I'm just a chatbot.", "I don't have a name. How can I assist you?"]
+        },
+        {
+            "tag":"circle_area",
+            "patterns":["Area of a Circle", "What is Area of a Circle","The Area of a Circle", "Area of the Circle","what is the area of a circle","what is the area of the circle","area of circle"],
+            "responses":["The Area of a Circle is  pi x r^2  where  pi = 3.14 and r = radius."]
+
+        },
+        {
+            "tag": "pythagorean_theorem",
+            "patterns": ["Pythagorean theorem", "Right-angled triangle"],
+            "responses": ["In a right-angled triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides. $c^2 = a^2 + b^2$."]
+        },
+        {
+            "tag":"square_area",
+            "patterns":["What is the area of a square","area of square","Area of a Square","Area of the Square","The Area of a Square","What is Area of a Square"],
+            "responses":["The Area of a Square is A x A where A is equal to the side of the Square."]
+        },
+        {
+            "tag":"rectangle_area",
+            "patterns":["What is the area of a Rectangle","Area of a Rectangle","area of rectangle","Area of the Rectangle","The Area of a Rectangle","What is Area of a Rectangle"],
+            "responses":["The Area of a Rectangle is l x b  where l = length and b = breadth "]
+        },
+        {
+            "tag":"triangle_area",
+            "patterns":["What is the area of a Triangle","Area of a Triangle","Area of the Triangle","The Area of a Triangle","What is Area of a Triangle","area of triangle"],
+            "responses":["The Area of a Triangle is 1/2 x b x h where h = heigth and b = base. "]
+        },
+        {
+            "tag":"parallelogram_area",
+            "patterns":["What is the area of a Parallelogram","Area of a Parallelogram","Area of the Parallelogram","The Area of a Parallelogram","What is Area of a Parallelogram","area of parallelogram"],
+            "responses":["The Area of a parallelogram is B x H where B = Base and H = Height ."]
+        },
+        {
+            "tag":"semicircle_area",
+            "patterns":["What is the area of a Semicircle","Area of a Semicircle","Area of the Semicircle","The Area of a Semicircle","What is Area of a Semicircle","area of semicircle"],
+            "responses":["The Area of a Semi-Circle is 1/2(π x r x r) where π = 3.14 and r = radius"]
+        },
+        {
+            "tag": "quadratic_formula",
+            "patterns": ["Quadratic formula", "Solve quadratic equation", "What is the quadratic formula"],
+            "responses": ["The quadratic formula is used to find the roots (solutions) of a quadratic equation ax^2 + bx + c = 0. The formula is x = (-b ± sqrt(b^2 - 4ac)) / 2a."]
+        },
+        {
+            "tag": "distance_formula",
+            "patterns": ["Distance formula", "Calculate distance between two points", "What is the distance formula"],
+            "responses": ["The distance formula in a coordinate plane between two points (x1, y1) and (x2, y2) is given by d = sqrt((x2 - x1)^2 + (y2 - y1)^2)."]
+        },
+        {
+            "tag": "volume_sphere",
+            "patterns": ["Volume of a sphere", "Sphere volume formula", "Calculate sphere volume"],
+            "responses": ["The volume of a sphere is given by the formula V = (4/3)πr^3, where V is the volume and r is the radius."]
+        },
+        {
+            "tag": "mean_median_mode",
+            "patterns": ["Mean, median, mode", "Calculate mean, median, mode", "What are mean, median, and mode"],
+            "responses": ["Mean is the average of a set of values, median is the middle value when the values are sorted, and mode is the most frequently occurring value."]
+        },
+        {
+            "tag": "volume_cube",
+            "patterns": ["Volume of a cube", "Cube volume formula", "Calculate cube volume", "What is the formula for the volume of a cube"],
+            "responses": ["The volume of a cube is given by the formula V = side^3, where V is the volume and side is the length of one side."]
+        },
+        {
+            "tag": "volume_cuboid",
+            "patterns": ["Volume of a cuboid", "Cuboid volume formula", "Calculate cuboid volume", "What is the formula for the volume of a cuboid"],
+            "responses": ["The volume of a cuboid is given by the formula V = lwh, where V is the volume, l is the length, w is the width, and h is the height."]
+        },
+        {
+            "tag": "volume_cylinder",
+            "patterns": ["Volume of a cylinder", "Cylinder volume formula", "Calculate cylinder volume", "What is the formula for the volume of a cylinder"],
+            "responses": ["The volume of a cylinder is given by the formula V = πr^2h, where V is the volume, r is the radius of the base, and h is the height."]
+        },
+        {
+            "tag": "volume_cone",
+            "patterns": ["Volume of a cone", "Cone volume formula", "Calculate cone volume", "What is the formula for the volume of a cone"],
+            "responses": ["The volume of a cone is given by the formula V = (1/3)πr^2h, where V is the volume, r is the radius of the base, and h is the height."]
+        },
+        {
+            "tag": "probability",
+            "patterns": ["Probability", "Probability rules", "Conditional probability"],
+            "responses": ["Probability is a measure of the likelihood of an event occurring. Basic rules include the probability of an event being between 0 and 1. Conditional probability is the probability of an event given that another event has occurred."]
+        },
+        {
+            "tag": "matrix_operations",
+            "patterns": ["Matrix operations", "Matrix multiplication", "Determinant"],
+            "responses": ["Matrix multiplication involves multiplying corresponding elements and summing the products. The determinant of a 2x2 matrix [a, b; c, d] is calculated as ad - bc."]
+        },
+        {
+            "tag": "trigonometry",
+            "patterns": ["Trigonometric functions", "Sine, cosine, tangent"],
+            "responses": ["In a right-angled triangle, the sine of an angle is the ratio of the opposite side to the hypotenuse, the cosine is the ratio of the adjacent side to the hypotenuse, and the tangent is the ratio of the opposite side to the adjacent side."]
+        },
+
+        {
+            "tag": "help",
+            "patterns": ["help"],
+            "responses": ["Hi! I am a Scibot. You can interact with me by asking Science question like Define Force , What is a Aear of any Space,  just like that you can interact with me. For calculation part Start the conversation With word Calculate the following what you want to calculate."]
+        },
+        {
+            "tag": "special_character",
+            "patterns": ["special character", "special characters"],
+            "responses": ["I'm sorry, I can't process special characters."]
+        },
+        {
+            "tag":"force_define",
+            "patterns":["what is force", "what is a force","define Force","Force","defination of force"],
+            "responses":["In physics, force is a vector quantity that represents the interaction between objects, causing a change in their motion or state of rest. It is a push or pull exerted on an object, resulting from the object's interaction with another object. Force is typically denoted by the symbol F and is measured in the International System of Units (SI) in newtons (N)"]
+        },
+        {
+            "tag" : "force_formula",
+            "patterns" : ["how to calculate force","calculate the force","Formula for force","force formula","formula of force","formula force"],
+            "responses":["The formula for force (F) is given by Newton's second law of motion, which states that the force acting on an object is equal to the mass (m) of the object multiplied by its acceleration (a). Mathematically, this can be expressed as: F= m x a"]
+        },
+        {
+            "tag": "law_of_motion",
+            "patterns":["define law of motion","what is law of motion","law of motion","defination of law of motion"],
+            "responses":["Newton's laws of motion are a set of three fundamental principles formulated by Sir Isaac Newton in the 17th century. These laws describe the relationship between the motion of an object and the forces acting on it. Newton's laws are fundamental to classical mechanics and are essential for understanding the behavior of objects in motion. The three laws are as follows: 1. First Law (Law of Inertia) , 2. Second Law (Law of Acceleration) , 3. Third Law (Action and Reaction)."]
+        },
+        {
+            "tag":"Einstein's Mass-Energy Equivalence",
+            "patterns":["what is mass-energy equivalence","mass energy equivalence"],
+            "responses":["E=mc^2 , Expresses the equivalence between mass (m) and energy (E), where c is the speed of light."]
+        },
+        {
+            "tag" :"ohm_law",
+            "patterns" :["what is ohm law", "formula for ohm law","define ohm law","defination of ohm law"],
+            "responses":["Ohm's Law is a fundamental principle in electrical engineering and physics that describes the relationship between voltage (V, measured in volts), current (I, measured in amperes), and resistance (R, measured in ohms) in an electrical circuit. Ohm's Law is named after the German physicist Georg Simon Ohm, who first formulated it. The mathematical representation of Ohm's Law is given by the equation: V = I x R."]
+        },
+        {
+            "tag" : "gavitation",
+            "patterns":["what is gravity", "define gravitation force", "define gravity", "how to calculate the gravity","calculate gravitation force"],
+            "responses":["The force of gravity is described by Sir Isaac Newton's law of universal gravitation, which states that every point mass in the universe attracts every other point mass with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers. Mathematically, this is expressed as: F = G x m1 x m2 /r^2  where F is the gravitational force between two objects, G is the gravitational constant, m1 and m2 are the masses of the two objects, r is the separation between the centers of the two masses."]
+        },
+        {
+            "tag": "work_energy",
+            "patterns": ["Work-Energy Theorem", "Calculate work or energy", "Conservation of energy","what is work energy", "work energy"],
+            "responses": ["The work-energy theorem states that the work done on an object is equal to the change in its kinetic energy."]
+        },
+        {
+            "tag": "Newton's_laws",
+            "patterns": ["Newton's laws of motion", "Newton's three laws","what are the three law given by newton"],
+            "responses": ["1. Newton's First Law: An object at rest will remain at rest, and an object in motion will remain in motion with a constant velocity unless acted upon by a net external force., 2. Newton's Second Law: (F = ma), where (F) is force, (m) is mass, and (a) is acceleration.,3. Newton's Third Law: For every action, there is an equal and opposite reaction."]
+        },
+        {
+            "tag": "momentum",
+            "patterns": ["Momentum", "Calculate momentum", "Impulse-momentum theorem"],
+            "responses": ["Momentum is the product of an object's mass and velocity. $p = mv$. The impulse-momentum theorem states that the change in momentum of an object is equal to the impulse applied to it."]
+        },
+        {
+            "tag": "half_life",
+            "patterns": ["Half-life", "Radioactive decay"],
+            "responses": ["The half-life of a radioactive substance is the time required for half of the substance to decay. It is governed by the equation $N(t) = N_0 \\left(\\frac{1}{2}\\right)^{t/T}$, where $N(t)$ is the remaining quantity, $N_0$ is the initial quantity, $t$ is time, and $T$ is the half-life."]
+        },
+        {
+            "tag": "vector_addition",
+            "patterns": ["Vector addition", "Resultant vector", "Triangle law of vector addition"],
+            "responses": ["Vector addition involves combining vectors to find their resultant. The Triangle Law of Vector Addition states that if two vectors are represented by two sides of a triangle, then their resultant is represented by the third side of the triangle."]
+        },
+        {
+            "tag": "wave_equation",
+            "patterns": ["Wave equation", "Calculate wave speed", "Wavelength and frequency relationship"],
+            "responses": ["The wave equation relates wave speed ($v$), wavelength ($\\lambda$), and frequency ($f$): $v = \\lambda f$. It expresses that the speed of a wave is equal to the product of its wavelength and frequency."]
+        },
+
+        {
+            "tag": "molar_mass",
+            "patterns": ["What is molar mass", "Calculate molar mass", "Molar mass definition", "Molar mass formula"],
+            "responses": ["The molar mass is the mass of one mole of a substance. It is calculated by adding up the atomic masses of all the atoms in a molecule. Molar Mass (M) = Σ (atomic masses of all atoms in the molecule)"]
+        },
+        {
+            "tag": "ideal_gas_law",
+            "patterns": ["What is the ideal gas law", "Ideal gas law formula", "Calculate pressure, volume, temperature", "Ideal gas constant"],
+            "responses": ["The ideal gas law describes the behavior of an ideal gas. PV = nRT, where P is pressure, V is volume, n is the number of moles of gas, R is the ideal gas constant, and T is the temperature in Kelvin."]
+        },
+        {
+            "tag": "reaction_rate",
+            "patterns": ["What is reaction rate", "Factors affecting reaction rate", "Calculate reaction rate", "Reaction rate formula"],
+            "responses": ["The reaction rate is the speed at which a chemical reaction takes place. It is often expressed as the change in concentration of a reactant or product per unit time. Reaction Rate = Δ [A] / Δt, where [A] is the concentration of a reactant."]
+        },
+        {
+            "tag": "stoichiometry",
+            "patterns": ["What is stoichiometry", "Stoichiometry formula", "Calculate moles, mass, volume", "Balancing chemical equations"],
+            "responses": ["Stoichiometry is the study of the quantitative relationships in chemical reactions. It involves using balanced chemical equations to calculate the amounts of reactants and products. Stoichiometry formula: moles A / coefficient A = moles B / coefficient B"]
+        },
+        {
+            "tag": "acid_base_pH",
+            "patterns": ["What is pH", "Calculate pH of a solution", "pH scale", "Acidic and basic solutions"],
+            "responses": ["pH is a measure of the acidity or basicity of a solution. It is defined as the negative logarithm (base 10) of the hydrogen ion concentration. pH = -log[H+]. A lower pH indicates acidity, while a higher pH indicates basicity."]
+        },
+        {
+            "tag": "bernoullis_principle",
+            "patterns": ["Bernoulli's principle", "Fluid dynamics"],
+            "responses": ["Bernoulli's principle states that as the speed of a fluid (liquid or gas) increases, its pressure decreases. This is commonly observed in the flow of fluids in pipes or around aerodynamic surfaces."]
+        },
+    
+        {
+            "tag": "eulers_formula",
+            "patterns": ["Euler's formula", "Complex numbers", "Euler's identity"],
+            "responses": ["Euler's formula connects complex exponentials with trigonometric functions: e^(ix) = cos(x) + isin(x)."]
+        },
+        {
+            "tag": "electric_field",
+            "patterns": ["Electric field", "Coulomb's law", "Calculate electric field"],
+            "responses": ["Coulomb's law describes the electric force between two charges: F = (k * q1 * q2) / r^2. The electric field (E) due to a point charge is given by E = (k * Q) / r^2."]
+        },
+        {
+            "tag": "heat_capacity",
+            "patterns": ["Heat capacity", "Specific heat", "Calculate heat capacity"],
+            "responses": ["Heat capacity (C) is the amount of heat required to raise the temperature of an object by 1 degree Celsius. It is given by Q = m * C * ΔT, where m is the mass, C is the specific heat, and ΔT is the temperature change."]
+        },
+        {
+            "tag": "chemical_kinetics",
+            "patterns": ["Rate of reaction", "Chemical kinetics", "Reaction order"],
+            "responses": ["The rate of a chemical reaction is often given by an expression like Rate = k[A]^n[B]^m, where k is the rate constant, [A] and [B] are the concentrations of reactants, and n and m are reaction orders."]
+        },
+        {
+            "tag": "geometric_series",
+            "patterns": ["Geometric series", "Sum of a geometric series"],
+            "responses": ["The sum of a geometric series with first term a, common ratio r, and n terms is given by Sn = a * ((r^n - 1) / (r - 1)). This formula is useful in mathematics and finance."]
+        },
+        {
+            "tag": "circular_motion",
+            "patterns": ["Centripetal force", "Circular motion", "Calculate centripetal force"],
+            "responses": ["In circular motion, the centripetal force required to keep an object moving in a circle of radius r with constant speed v is given by Fc = (m * v^2) / r."]
+        },
+        {
+            "tag": "chemical_equilibrium",
+            "patterns": ["Chemical equilibrium", "Equilibrium constant", "Le Chatelier's principle"],
+            "responses": ["The equilibrium constant (K) expression for a reaction is given by K = ([C]^c[D]^d) / ([A]^a[B]^b), where a, b, c, and d are the coefficients in the balanced chemical equation."]
+        },
+        {
+            "tag": "fourier_transform",
+            "patterns": ["Fourier transform", "Signal processing"],
+            "responses": ["The Fourier transform of a function f(t) is given by F(ω) = ∫ f(t)e^(-iωt) dt. It decomposes a function into its frequency components and is widely used in signal processing."]
+        },
+        {
+            "tag": "moment_of_inertia",
+            "patterns": ["Moment of inertia", "Rotational motion", "Calculate moment of inertia"],
+            "responses": ["The moment of inertia (I) of a point mass rotating about an axis at a distance r is given by I = mr^2. For extended objects, integration is often used to calculate I."]
+        },
+        {   
+            "tag": "logarithmic_properties",
+            "patterns": ["Logarithmic properties", "Logarithm rules"],
+            "responses": ["Logarithmic properties include the product rule: log_ab + log_ac = log_a(bc), the quotient rule: log_ab - log_ac = log_a(b/c), and the power rule: n * log_ab = log_a(b^n)."]
+        },
+        {
+            "tag": "magnetic_field",
+            "patterns": ["Magnetic field", "Ampere's law", "Calculate magnetic field"],
+            "responses": ["Ampere's law relates the magnetic field (B) around a closed loop to the current passing through the loop: ∮ B ⋅ dℓ = μ₀ I_enc, where μ₀"]
+        }
+
+
+
+    ]
+}

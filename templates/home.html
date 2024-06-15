@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sci-bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="chat-container"> 
+        <header class="header">
+            <a href="#" class="logo">Sci-Bot</a>
+            <nav class="navbar">
+                <a href="{{ url_for('go_home') }}" title="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="#" title="Help"><i class="fa-solid fa-question"></i></a>
+                <a href="#" title="Activites"><i class="fa-solid fa-clock-rotate-left"></i></a>
+            </nav>
+        </header>
+        <div class="chat-log" id="chat-log">
+            <div class="user-message"></div>
+            <div class="bot-message"></div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask a Questions.....">
+            <button class="send" id="send"><i class="fa-solid fa-reply fa-flip-horizontal"></i></button>
+        </div>
+        <div class="msg">
+            Sci-Bot is a simple college Project 
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#send").click(function () {
+                var userMessage = $("#user-input").val();
+                if (userMessage.trim() === "") return;
+    
+                // Create user message and show it
+                var userMessageDiv = $('<div class="user-message">User :  ' + userMessage + '</div>');
+                userMessageDiv.hide(); // Hide initially
+                $("#chat-log").append(userMessageDiv);
+                userMessageDiv.slideDown();
+    
+                $("#user-input").val("");
+                $.ajax({
+                    url: "/ask",
+                    type: "POST",
+                    data: { user_message: userMessage },
+                    success: function (response) {
+                        var botResponse = response.response;
+    
+                        // Create bot message and show it
+                        var botMessageDiv = $('<div class="bot-message">Sci-bot :  ' + botResponse + '</div>');
+                        botMessageDiv.hide(); // Hide initially
+                        $("#chat-log").append(botMessageDiv);
+                        botMessageDiv.slideDown();
+    
+                        // Scroll to the bottom of the chat log
+                        $("#chat-log").scrollTop($("#chat-log")[0].scrollHeight);
+                    }
+                });
+            });
+    
+            // Handle Enter key press in the input field
+            $("#user-input").keypress(function (e) {
+                if (e.which === 13) {
+                    $("#send").click();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
